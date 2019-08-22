@@ -1,7 +1,7 @@
 FROM golang:1.12 as builder
 
 ENV GO111MODULE=on
-WORKDIR /go/src/github.com/Smartraining/gitops-actions
+WORKDIR /go/src/github.com/marceloaguero/gitops-actions
 COPY . .
 
 RUN go get -d -v ./...
